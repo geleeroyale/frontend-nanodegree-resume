@@ -45,10 +45,10 @@ var bio = {
     bio.skills.forEach(function (formattedSkills, index) {
       formattedSkills = HTMLskills.replace('%data%', bio.skills[index]);
       skillsList.push(formattedSkills);
-    })
+    });
     $('#skills').append(skillsList);
   }
-}
+};
 
 var work = {
   jobs:
@@ -75,11 +75,11 @@ var work = {
       var formattedWorkDates = HTMLworkDates.replace('%data%', work.jobs[index].dates);
       var formattedDescription = HTMLworkDescription.replace('%data%', work.jobs[index].description);
       jobList.push(formattedEmployer, formattedTitle, formattedLocation, formattedWorkDates, formattedDescription);
-    })
+    });
     $('#workExperience').append(HTMLworkStart);
     $('.work-entry').append(jobList);
   }
-}
+};
 
 var projects = {
   projects:
@@ -106,12 +106,12 @@ var projects = {
       projects.projects[index].images.forEach(function (image, number) {
         formattedImages = HTMLprojectImage.replace('%data%', projects.projects[index].images[number]);
         projectList.push(formattedImages);
-      })
-    })
+      });
+    });
     $('#projects').append(HTMLprojectStart);
     $('.project-entry').append(projectList);
   }
-}
+};
 
 var education = {
   schools:
@@ -153,7 +153,7 @@ var education = {
       var formattedMajors = HTMLschoolMajor.replace('%data%', education.schools[index].majors);
       var formattedDates = HTMLschoolDates.replace('%data%', education.schools[index].dates);
       schoolList.push(formattedName, formattedLocation, formattedDegree, formattedMajors, formattedDates);
-    })
+    });
     $('#education').append(HTMLschoolStart);
     $('.education-entry').append(schoolList);
 
@@ -163,15 +163,15 @@ var education = {
       var formattedDates = HTMLonlineDates.replace('%data%', education.onlineCourses[index].dates);
       var formattedURL = HTMLonlineURL.replace('%data%', education.onlineCourses[index].url);
       coursesList.push(formattedTitle, formattedSchool, formattedDates, formattedURL);
-    })
+    });
     $('.education-entry').append(HTMLonlineClasses);
     $('.education-entry').append(coursesList);
   }
-}
+};
 
 var displayMap = function () {
   $('#mapDiv').append(googleMap);
-}
+};
 
 /*
 -SECTION 2- This section calls the display functions on the individual resume objects
