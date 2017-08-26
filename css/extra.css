@@ -1,0 +1,40 @@
+#header {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: hard-light;
+
+  background-image: linear-gradient(to bottom, #484848 0%, #f3f3f3 100%);
+}
+
+body,
+div,
+ul,
+li,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding: 0;
+  margin: 0;
+  font-family: "Quicksand", sans-serif;
+}
+
+h1, .orange-text, #skills-h3{
+  color: #ff7500;
+}
+
+.orange {
+  background-color: #ff7500;
+  color: #4a4a4a;
+}
+
+h3 {
+  color: #999;
+}
+
+.courses-entry {
+  padding: 0 5%;
+}
